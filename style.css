@@ -1,0 +1,153 @@
+.index-page{
+    background-image: url(/images/mainpage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.9;
+}
+.quizapp{
+    background-image: url(/images/texture.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#buttonquiz{
+        background-color: #3349AC; 
+        color: white; 
+        font-size: 24px; 
+        padding: 15px 30px; 
+        border: none; 
+        border-radius: 5px; 
+        cursor: pointer; 
+        transition: background-color 0.3s, transform 0.2s;
+}
+        #buttonquiz:hover {
+            background-color: #FA9FEF; 
+            transform: scale(1.05); 
+        }
+    
+#myimage{
+text-align: center;
+color: #e60b92;
+padding: 60px;
+box-shadow: 3px 4px 5px #3349AC;
+margin-top: 90px;
+text-transform: uppercase; /* Uppercase text */
+    animation: highlight 5s linear infinite;
+    margin-bottom: 30px;
+    text-shadow: #FA9FEF;
+    text-decoration: underline;
+    background-color: black;
+}
+@keyframes highlight {
+    0% {
+        opacity: 0.7; 
+    }
+    50% {
+        opacity: 0.9; 
+    }
+    100% {
+        opacity: 0.3; 
+    }
+}
+button a{
+color: white;
+text-decoration: none;
+}
+#image{
+    width: 50px;
+    height: 50px;
+}
+#box{
+    color: black;
+    font-size: 20px;
+    background-image: url(/images/texture\ box.jpg);
+    border: 8px double rgb(14, 13, 13);
+    box-shadow: 10px 10px 10px gold;
+    margin-top: 40px;
+}
+.buttonquiz{
+    background-color: white; 
+    color: black; 
+    font-size: 24px; 
+    padding: 10px 30px 10px 30px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.buttonquiz[disabled] {
+    background-color: lightgray;
+    color: red;
+    cursor: not-allowed;
+    border: 1px solid gray; /* Add a border for the disabled state */
+    opacity: 0.6; /* Reduce opacity for disabled state */
+    filter: grayscale(100%); /* Make the button grayscale for the disabled state */
+}
+    .buttonquiz:hover {
+        background-color:gold; 
+        transform: scale(1.05); 
+    }
+    input[type="radio"] + label {
+        position: relative;
+        padding-left: 25px; /* Adjust the spacing as needed */
+        cursor: pointer;
+    }
+    
+    input[type="radio"] + label:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px; 
+        height: 20px; /* Adjust the size as needed */
+        border: 2px solid black; /* Border style for the indicator */
+        border-radius: 50%;
+    }
+    
+    input[type="radio"]:checked + label:before {
+        background-color: gold; 
+        border-color: gold; 
+    }
+.timer-container {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%; 
+    background-color: black; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; 
+    font-size: 24px; 
+    border: 2px double gold;
+}
+
+#timer {
+    margin: 0;
+    padding: 0;
+}
+@keyframes headingAnimation {
+    0% {
+        font-size: 20px; 
+    }
+    50% {
+        font-size: 30px; 
+    }
+    100% {
+        font-size: 35px; 
+    }
+}
+.animated-heading {
+    animation: headingAnimation 2s linear infinite;
+    text-shadow: 3px 3px 4px rgb(104, 102, 102);
+    color: gold;
+    border: 2px solid grey;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(85, 85, 85));
+}

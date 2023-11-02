@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<center>
+<body onload="nextQuestion()" class="quizapp">
+    <div class="container-fluid">
+    <div class="row timer-container">
+        <p id="timer">2:00</p>
+    </div>
+    <h1 class="animated-heading mb-3">Your Quiz Starts Now <img src="/images/Removal-300.png" id="image" alt=""></h1>
+<div class="container" id="box">
+    <div class="row" >
+
+        <p id="ques" style="text-decoration: underline; font-size: 30px; font-weight: bold;"></p>
+ </div>
+        <br>
+       <div class="row" id="option-box">
+        <div class="col">
+        <input onclick="clicked()" value="1" name="options" type="radio">
+        <label id="opt1"></label>
+         <br>
+        <br><br>
+    </div>
+    <div class="col">
+        <input onclick="clicked()" value="2" name="options" type="radio">
+        <label id="opt2"></label>
+
+        <br>
+        <br><br>
+    </div> 
+</div>
+<div class="row mb-5">
+    <div class="col">
+        <input onclick="clicked()" value="3" name="options" type="radio">
+        <label id="opt3"></label>
+    </div>
+</div>
+<center>
+        <button id="btn"  class="buttonquiz" disabled onclick="nextQuestion()" class="btn-hover color-1" >next</button>
+    
+        
+          <div onclick="displayResult() "></div>
+      
+        </div>
+    
+</div>
+</center>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
